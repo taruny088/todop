@@ -10,7 +10,7 @@
     <h1><a href="{% url 'specific_detail' i.id %}">{{i.username}}</a></h1>
     <h1>{{i.task_name}}</h1>
     <h1>{{i.disc}}</h1>
-    <img src="{{ i.pic.url }}" alt="">
+    <img src="{{ i.pic.url }}" alt="{{ item.pic.name }}">
     {% endfor %}
 </body>
 </html>
