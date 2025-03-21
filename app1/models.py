@@ -8,4 +8,4 @@ class Regmodel(models.Model):
     pic=models.ImageField(upload_to='pic/')
 
     def __str__(self):
-        return self.task_name
+        return self.username
